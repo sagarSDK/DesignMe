@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Client Task</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<body> 
+    <div  class="container-fluid">
+      <div class="row mainDiv span8">
+        <div class="col-sm-3 col-xs-12">
+          <div class="nav-side-menu">
+            <div class="brand"><span class="pages-css">pages</span>
+              <div id="counterSpan"></div>
+              <img id="addMenu" src="images/plus.png" class="plus-right">
+            </div>
+            <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+            <div class="menu-list">
+              <ul id="menu-content" class="menu-content collapse out">
+                <li class="ui-state-default active">
+                  <a href="#">
+                    <img src="images/li_img.png" class="menu-image"> Shared Plesk
+                  </a>
+                  <div class="right-images">
+                     <input type="checkbox" name="menuList" value=""> 
+                    <img src="images/delete.png" class="deleteBtn"></div>                      
+                </li>
+                <li class="ui-state-default">
+                  <a href="#">
+                    <img src="images/li_img.png" class="menu-image"> Shared CPanel
+                  </a>
+                  <div class="right-images">
+                    <input type="checkbox" name="menuList" value=""> 
+                    <img src="images/delete.png" class="deleteBtn"></div> 
+                </li>
+                <li class="ui-state-default">
+                  <a href="#">
+                    <img src="images/li_img.png" class="menu-image"> Shared Windows
+                  </a>
+                  <div class="right-images"><input type="checkbox" name="menuList" value="">
+                    <img src="images/delete.png" class="deleteBtn"></div>
+                </li>
+                <li class="ui-state-default">
+                  <a href="#">
+                    <img src="images/li_img.png" class="menu-image"> Reseller C-Panel
+                  </a>
+                  <div class="right-images"><input type="checkbox" name="menuList" value="">
+                    <img src="images/delete.png" class="deleteBtn"></div>                      
+                </li>
+                <li class="ui-state-default">
+                  <a href="#">
+                    <img src="images/li_img.png" class="menu-image"> Reseller Plesk
+                  </a>
+                  <div class="right-images"><input type="checkbox" name="menuList" value="">
+                    <img src="images/delete.png" class="deleteBtn"></div>                       
+                </li>
+                <li class="ui-state-default">
+                  <a href="#">
+                    <img src="images/li_img.png" class="menu-image"> Reseller Windows
+                  </a>
+                  <div class="right-images"><input type="checkbox" name="menuList" value="">
+                    <img src="images/delete.png" class="deleteBtn"></div>                       
+                </li>  
+                <li class="ui-state-default">
+                  <a href="#">
+                    <img src="images/li_img.png" class="menu-image"> C-Panel Master
+                  </a>
+                  <div class="right-images"><input type="checkbox" name="menuList" value="">
+                    <img src="images/delete.png" class="deleteBtn"></div>                       
+                </li>
+                <li class="ui-state-default">
+                  <a href="#">
+                    <img src="images/li_img.png" class="menu-image"> Dedicated Plesk
+                  </a>
+                  <div class="right-images"><input type="checkbox" name="menuList" value="">
+                    <img src="images/delete.png" class="deleteBtn"></div>                       
+                </li>
+                <li class="ui-state-default">
+                  <a href="#">
+                    <img src="images/li_img.png" class="menu-image"> Dedicated C-Panel
+                  </a>
+                  <div class="right-images"><input type="checkbox" name="menuList" value="">
+                    <img src="images/delete.png" class="deleteBtn"></div>                       
+                </li>
+                <li class="ui-state-default">
+                  <a href="#">
+                    <img src="images/li_img.png" class="menu-image"> Dedicated Windows
+                  </a> 
+                  <div class="right-images"><input type="checkbox" name="menuList" value="">
+                    <img src="images/delete.png" class="deleteBtn"></div>                       
+                </li>
+                <li class="ui-state-default">
+                  <a href="#">
+                    <img src="images/li_img.png" class="menu-image"> Packages
+                  </a>
+                  <div class="right-images"><input type="checkbox" name="menuList" value="">
+                    <img src="images/delete.png" class="deleteBtn"></div>                       
+                </li>
+
+                <li class="ui-state-default">
+                  <a href="#">
+                    <img src="images/li_img.png" class="menu-image"> VM Plesk Linux
+                  </a> 
+                  <div class="right-images"><input type="checkbox" name="menuList" value="">
+                    <img src="images/delete.png" class="deleteBtn"></div>                       
+                </li>
+
+                <li class="ui-state-default">
+                  <a href="#">
+                    <img src="images/li_img.png" class="menu-image"> VM Plesk Windows
+                  </a> 
+                  <div class="right-images"><input type="checkbox" name="menuList" value="">
+                    <img src="images/delete.png" class="deleteBtn"></div>                       
+                </li>
+
+                <li class="ui-state-default">
+                  <a href="#">
+                    <img src="images/li_img.png" class="menu-image"> VM Cpanel Linux
+                  </a> 
+                  <div class="right-images"><input type="checkbox" name="menuList" value="">
+                    <img src="images/delete.png" class="deleteBtn"></div>                      
+                </li>
+				
+                <li class="ui-state-default">
+                  <a href="#">
+                    <img src="images/li_img.png" class="menu-image"> TOS
+                  </a> 
+                  <div class="right-images"><input type="checkbox" name="menuList" value="">
+                    <img src="images/delete.png" class="deleteBtn"></div>       
+                </li>
+              </ul>
+              <div class="Filter">  
+              <label> Filter -</label>  
+               <div class="input-group"> 
+                <input type="text" id="myInput" class="form-control" onkeyup="showResult()" placeholder="Search" title="Type in a name">
+                 <span class="input-group-addon">
+                  <img src="images/delete.png" class="searchClear">
+                </span>
+              </div>  
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-9"> 
+          <div class="container-fluid">
+		  <ul class="nav nav-tabs">
+			<li class="active"><a data-toggle="tab" href="#home">Tab 1</a></li>
+			<li><a data-toggle="tab" href="#tab2">Tab 2</a></li>
+		  </ul>
+		  <div class="tab-content">
+			<div id="home" class="tab-pane fade in active">
+			  <h3>Demo task</h3>
+			  <p>Template home</p>
+			</div>
+			<div id="tab2" class="tab-pane fade">
+			  <h3>demo text</h3>
+			  <p>template.</p>
+			</div>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="assets/common.js"></script>
+</body>
+</html>
